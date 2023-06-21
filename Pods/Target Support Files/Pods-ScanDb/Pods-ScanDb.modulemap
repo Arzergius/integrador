@@ -1,0 +1,6 @@
+framework module Pods_ScanDb {
+  umbrella header "Pods-ScanDb-umbrella.h"
+
+  export *
+  module * { export * }
+}
