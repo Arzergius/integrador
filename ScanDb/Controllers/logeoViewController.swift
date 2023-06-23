@@ -42,6 +42,7 @@ class logeoViewController: UIViewController {
 
     }
 
+    //Función para cerrar teclado al hacer tap en pantalla
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         

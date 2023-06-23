@@ -205,7 +205,7 @@
         <!--Lista View Controller-->
         <scene sceneID="3zj-Cw-QyL">
             <objects>
-                <viewController id="sy9-6U-3CB" customClass="listaViewController" customModule="ScanDb" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="sy9-6U-3CB" customClass="listaViewController" customModule="ScanDb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z4D-Sh-0fk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,21 +213,41 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="00d-1a-5mJ">
                                 <rect key="frame" x="0.0" y="47" width="375" height="708"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="36D-Ns-Dti" detailTextLabel="o06-ZO-Wba" style="IBUITableViewCellStyleSubtitle" id="DJ8-Sq-fNM">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DJ8-Sq-fNM" id="GgP-2d-qet">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="36D-Ns-Dti">
+                                                    <rect key="frame" x="20" y="6.0000000000000009" width="25" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o06-ZO-Wba">
+                                                    <rect key="frame" x="19.999999999999996" y="22.333333333333336" width="32.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vuc-jU-5mb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="00d-1a-5mJ" firstAttribute="top" secondItem="Vuc-jU-5mb" secondAttribute="top" id="DNT-4n-fMa"/>
-                            <constraint firstItem="Vuc-jU-5mb" firstAttribute="trailing" secondItem="00d-1a-5mJ" secondAttribute="trailing" id="DSN-I2-5oC"/>
-                            <constraint firstItem="00d-1a-5mJ" firstAttribute="trailing" secondItem="Vuc-jU-5mb" secondAttribute="trailing" id="JG5-hR-bWc"/>
-                            <constraint firstItem="Vuc-jU-5mb" firstAttribute="bottom" secondItem="00d-1a-5mJ" secondAttribute="bottom" id="JQ5-AA-IHE"/>
-                            <constraint firstItem="00d-1a-5mJ" firstAttribute="top" secondItem="Vuc-jU-5mb" secondAttribute="top" id="K7X-RR-Ih5"/>
-                            <constraint firstItem="00d-1a-5mJ" firstAttribute="leading" secondItem="Vuc-jU-5mb" secondAttribute="leading" id="LVe-2K-CML"/>
-                            <constraint firstItem="00d-1a-5mJ" firstAttribute="leading" secondItem="Vuc-jU-5mb" secondAttribute="leading" id="XZK-Kv-c8T"/>
-                            <constraint firstItem="00d-1a-5mJ" firstAttribute="top" secondItem="Vuc-jU-5mb" secondAttribute="top" id="c1n-yF-32B"/>
-                            <constraint firstItem="00d-1a-5mJ" firstAttribute="leading" secondItem="Vuc-jU-5mb" secondAttribute="leading" id="pED-nZ-1cv"/>
-                            <constraint firstItem="Vuc-jU-5mb" firstAttribute="trailing" secondItem="00d-1a-5mJ" secondAttribute="trailing" id="vCx-5r-Mn3"/>
+                            <constraint firstItem="00d-1a-5mJ" firstAttribute="leading" secondItem="Vuc-jU-5mb" secondAttribute="leading" id="4CA-hJ-IS3"/>
+                            <constraint firstItem="00d-1a-5mJ" firstAttribute="trailing" secondItem="Vuc-jU-5mb" secondAttribute="trailing" id="JN8-b2-mY0"/>
+                            <constraint firstItem="00d-1a-5mJ" firstAttribute="top" secondItem="Vuc-jU-5mb" secondAttribute="top" id="wf2-cW-Ypc"/>
+                            <constraint firstItem="00d-1a-5mJ" firstAttribute="bottom" secondItem="Vuc-jU-5mb" secondAttribute="bottom" id="xCK-tq-0LB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cfl-GA-3yP">
@@ -242,6 +262,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tablaProductos" destination="00d-1a-5mJ" id="5JL-Bn-6ER"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4X-3q-4ks" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -411,6 +434,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="lUk-bs-nWo"/>
         <segue reference="cKZ-Ff-JB2"/>
     </inferredMetricsTieBreakers>
     <resources>
