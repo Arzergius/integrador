@@ -20,7 +20,7 @@ class logeoViewController: UIViewController {
         Auth.auth().signIn(withEmail: correotxtfield.text! , password: passwordtxtfield.text!) {(user, error) in
             print("Intentando Iniciar Sesion")
             if error != nil {
-                print("Error de \(error)")
+                print("Error de \(error!.localizedDescription)")
                 
                 let alerta = UIAlertController(title: "Error", message: "El usuario no existe o los datos son incorrectos", preferredStyle: .alert)
                 
@@ -33,25 +33,19 @@ class logeoViewController: UIViewController {
             }
         }
         //        Modo desarrollador sin login
-        //        self.performSegue(withIdentifier: "logeocorrecto", sender: nil)
+//                self.performSegue(withIdentifier: "logeocorrecto", sender: nil)
         //    }
         //
     }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        
+        correotxtfield.resignFirstResponder()
+        passwordtxtfield.resignFirstResponder()
     }
-    */
-
 }
