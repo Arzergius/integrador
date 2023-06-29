@@ -79,7 +79,7 @@ class registroArticuloViewController: UIViewController, UIImagePickerControllerD
             }
             
             // Convertir la imagen a data en formato JPEG
-            guard let imagenData = imagen.jpegData(compressionQuality: 0.5) else {
+            guard let imagenData = imagen.jpegData(compressionQuality: 0.50) else {
                 mostrarAlerta(titulo: "Error", mensaje: "No se pudo obtener la imagen", accion: "Aceptar")
                 return
             }

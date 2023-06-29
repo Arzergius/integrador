@@ -35,6 +35,7 @@ class listaViewController: UIViewController, UITableViewDelegate, UITableViewDat
             articulo.nombre = (snapshot.value as! NSDictionary)["descripcion"] as! String
             articulo.cantidad = (snapshot.value as! NSDictionary)["cantidad"] as! String
             articulo.precio = (snapshot.value as! NSDictionary)["precio"] as! String
+            articulo.imagenURL = (snapshot.value as! NSDictionary)["imagenURL"] as! String
             self.articulos.append(articulo)
             self.tablaProductos.reloadData()
         })

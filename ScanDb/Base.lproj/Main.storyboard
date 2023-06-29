@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="dark"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -15,17 +14,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="logeoViewController" customModule="ScanDb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j41-Yp-pqS">
-                                <rect key="frame" x="149" y="305" width="77.333333333333314" height="26.333333333333314"/>
+                                <rect key="frame" x="149" y="352" width="77.333333333333314" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2Y-Dv-DND">
-                                <rect key="frame" x="87.666666666666686" y="341.33333333333331" width="200" height="34"/>
+                                <rect key="frame" x="87.666666666666686" y="388.33333333333331" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="ryO-0x-Vte"/>
                                 </constraints>
@@ -33,18 +32,18 @@
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zEH-rK-AZq">
-                                <rect key="frame" x="88.666666666666686" y="431.66666666666669" width="200" height="34"/>
+                                <rect key="frame" x="88.666666666666686" y="478.66666666666669" width="200" height="34.000000000000057"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7N-81-WcJ">
-                                <rect key="frame" x="139" y="395.33333333333331" width="97.333333333333314" height="26.333333333333314"/>
+                                <rect key="frame" x="139" y="442.33333333333331" width="97.333333333333314" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuY-Rd-s7r">
-                                <rect key="frame" x="112.66666666666669" y="490.66666666666669" width="150" height="35.000000000000057"/>
+                                <rect key="frame" x="112.66666666666669" y="537.66666666666663" width="150" height="35"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="GBb-0S-Z0I"/>
@@ -58,14 +57,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chemslar" translatesAutoresizingMaskIntoConstraints="NO" id="Orh-lG-CAt">
-                                <rect key="frame" x="87.666666666666686" y="40" width="200" height="250"/>
+                                <rect key="frame" x="87.666666666666686" y="87" width="200" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="QaC-HJ-HsQ"/>
                                     <constraint firstAttribute="width" constant="200" id="YYO-xO-UBL"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cs9-3i-8RS">
-                                <rect key="frame" x="112.66666666666669" y="545.66666666666663" width="150" height="35"/>
+                                <rect key="frame" x="112.66666666666669" y="592.66666666666663" width="150" height="35"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Registrarse">
@@ -114,7 +113,7 @@
             <objects>
                 <viewController id="vEK-2E-SSr" customClass="registroViewController" customModule="ScanDb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zt6-GT-NnQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9R3-qK-1Ze">
@@ -209,7 +208,7 @@
             <objects>
                 <viewController id="AbC-7r-ecp" customClass="verDetalleViewController" customModule="ScanDb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ueu-at-2Ok">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Codigo de Barras :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCi-zx-fw0">
@@ -237,20 +236,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sZQ-jt-gDi">
-                                <rect key="frame" x="30" y="439" width="315" height="128"/>
+                                <rect key="frame" x="30" y="317" width="315" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Dnb-Dg-YYL"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pQ3-ue-yBU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pQ3-ue-yBU" firstAttribute="bottom" secondItem="sZQ-jt-gDi" secondAttribute="bottom" constant="235" id="0IF-Nl-3ET"/>
                             <constraint firstItem="gPq-jv-VTX" firstAttribute="leading" secondItem="pQ3-ue-yBU" secondAttribute="leading" constant="35" id="5kG-T9-CM9"/>
                             <constraint firstItem="fDf-q3-cTZ" firstAttribute="top" secondItem="gPq-jv-VTX" secondAttribute="bottom" constant="28" id="BqF-45-IOq"/>
                             <constraint firstItem="gPq-jv-VTX" firstAttribute="top" secondItem="oCi-zx-fw0" secondAttribute="bottom" constant="32" id="Gy4-qD-0Om"/>
                             <constraint firstItem="pQ3-ue-yBU" firstAttribute="trailing" secondItem="sZQ-jt-gDi" secondAttribute="trailing" constant="30" id="MsP-gm-USs"/>
                             <constraint firstItem="sZQ-jt-gDi" firstAttribute="leading" secondItem="pQ3-ue-yBU" secondAttribute="leading" constant="30" id="WMr-AE-rBX"/>
                             <constraint firstItem="Beb-L2-RJX" firstAttribute="top" secondItem="fDf-q3-cTZ" secondAttribute="bottom" constant="27" id="gqy-js-vwb"/>
-                            <constraint firstItem="sZQ-jt-gDi" firstAttribute="top" secondItem="Beb-L2-RJX" secondAttribute="bottom" constant="152" id="hRs-8R-dWp"/>
+                            <constraint firstItem="sZQ-jt-gDi" firstAttribute="top" secondItem="Beb-L2-RJX" secondAttribute="bottom" constant="30" id="hRs-8R-dWp"/>
                             <constraint firstItem="oCi-zx-fw0" firstAttribute="leading" secondItem="pQ3-ue-yBU" secondAttribute="leading" constant="35" id="svL-Wa-SK5"/>
                             <constraint firstItem="Beb-L2-RJX" firstAttribute="leading" secondItem="pQ3-ue-yBU" secondAttribute="leading" constant="35" id="tYG-Cz-JmM"/>
                             <constraint firstItem="oCi-zx-fw0" firstAttribute="top" secondItem="pQ3-ue-yBU" secondAttribute="top" constant="60" id="tmB-ct-7ba"/>
@@ -275,7 +276,7 @@
             <objects>
                 <viewController id="dAO-D0-sEZ" customClass="filtradoDetalleViewController" customModule="ScanDb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zeG-YK-7t2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Codigo de Barras :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLb-ic-ZwT">
@@ -297,7 +298,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="13s-wj-m7K">
-                                <rect key="frame" x="30" y="423" width="315" height="133"/>
+                                <rect key="frame" x="30" y="321" width="315" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="PPl-s5-pgE"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8f-uG-h9R">
                                 <rect key="frame" x="35" y="217" width="78" height="21"/>
@@ -318,9 +322,8 @@
                             <constraint firstItem="hLb-ic-ZwT" firstAttribute="top" secondItem="rL0-BQ-9bZ" secondAttribute="top" constant="60" id="Ubx-US-vWv"/>
                             <constraint firstItem="hLb-ic-ZwT" firstAttribute="leading" secondItem="rL0-BQ-9bZ" secondAttribute="leading" constant="30" id="jMC-RR-Zta"/>
                             <constraint firstItem="B8f-uG-h9R" firstAttribute="top" secondItem="M9z-RU-Kx1" secondAttribute="bottom" constant="27" id="jii-Fa-plZ"/>
-                            <constraint firstItem="rL0-BQ-9bZ" firstAttribute="bottom" secondItem="13s-wj-m7K" secondAttribute="bottom" constant="246" id="kId-4Z-F9M"/>
                             <constraint firstItem="TDK-6z-RC0" firstAttribute="top" secondItem="B8f-uG-h9R" secondAttribute="bottom" constant="32" id="r3w-wU-qdw"/>
-                            <constraint firstItem="13s-wj-m7K" firstAttribute="top" secondItem="TDK-6z-RC0" secondAttribute="bottom" constant="132" id="x0D-S6-ODd"/>
+                            <constraint firstItem="13s-wj-m7K" firstAttribute="top" secondItem="TDK-6z-RC0" secondAttribute="bottom" constant="30" id="x0D-S6-ODd"/>
                             <constraint firstItem="M9z-RU-Kx1" firstAttribute="leading" secondItem="rL0-BQ-9bZ" secondAttribute="leading" constant="35" id="zrU-d8-GhB"/>
                         </constraints>
                     </view>
@@ -342,11 +345,11 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="sy9-6U-3CB" customClass="listaViewController" customModule="ScanDb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z4D-Sh-0fk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="00d-1a-5mJ">
-                                <rect key="frame" x="0.0" y="56" width="375" height="746"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="699"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="36D-Ns-Dti" detailTextLabel="o06-ZO-Wba" style="IBUITableViewCellStyleSubtitle" id="DJ8-Sq-fNM">
@@ -411,7 +414,7 @@
             <objects>
                 <viewController id="HSc-6M-7Pa" customClass="registroArticuloViewController" customModule="ScanDb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aou-4B-6xB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3B9-xJ-Af1">
@@ -526,19 +529,19 @@
         <scene sceneID="9NJ-5s-NHc">
             <objects>
                 <viewController id="Wcz-MV-MBc" customClass="scannerViewController" customModule="ScanDb" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hJi-4l-tdy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="hJi-4l-tdy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mBV-B2-Dw8">
-                                <rect key="frame" x="87.666666666666686" y="381.66666666666669" width="200" height="38.666666666666686"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mBV-B2-Dw8">
+                                <rect key="frame" x="87.666666666666686" y="381.66666666666663" width="200" height="38.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="oYC-Xi-hQh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ultimo Codigo Registrado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgj-gw-y2P">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ultimo Codigo Registrado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgj-gw-y2P">
                                 <rect key="frame" x="36" y="502.33333333333326" width="303" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Y65-EX-i0d"/>
