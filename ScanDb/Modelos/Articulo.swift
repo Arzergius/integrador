@@ -12,5 +12,7 @@ class Articulo{
     var nombre = ""
     var cantidad = ""
     var precio = ""
+    var imagenURL = ""
+    var imagenID = ""
     //posiblemente se agregue una imagen pendiente
 }

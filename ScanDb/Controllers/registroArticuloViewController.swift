@@ -33,14 +33,14 @@ class registroArticuloViewController: UIViewController, UIImagePickerControllerD
         imagePicker.sourceType = .camera
         imagePicker.allowsEditing = false
         present(imagePicker, animated: true, completion: nil)
-        
     }
+    
     @IBOutlet weak var imagenProduct: UIImageView!
     @IBOutlet weak var txtfieldbarcode: UITextField!
     @IBOutlet weak var txtfieldnombre: UITextField!
     @IBOutlet weak var txtfieldCantidad: UITextField!
     @IBOutlet weak var txtfieldPrecio: UITextField!
-    
+     
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[.originalImage] as? UIImage {
@@ -111,6 +111,13 @@ class registroArticuloViewController: UIViewController, UIImagePickerControllerD
                         self.mostrarAlerta(titulo: "Error", mensaje: "No se pudo obtener la URL de la imagen", accion: "Aceptar")
                         return
                     }
+//                    guard let articuloID = self.txtfieldbarcode.text else {
+//                                    mostrarAlerta(titulo: "Error", mensaje: "No se pudo obtener el ID del artículo", accion: "Aceptar")
+//                                    return
+//                                }
+//                    let articuloRef = Database.database().reference().child("Articulos").child(articuloID)
+//                                articuloRef.updateChildValues(["imagenURL": downloadURL.absoluteString])
+//
                     
                     // Crear el diccionario con la información del snap
                     let snap = [
@@ -136,55 +143,7 @@ class registroArticuloViewController: UIViewController, UIImagePickerControllerD
                         
                     }
                 }
-            //        guard let barcode = txtfieldbarcode.text,
-            //              let nombre = txtfieldnombre.text,
-            //              let cantidad = txtfieldCantidad.text,
-            //              let precio = txtfieldPrecio.text,
-            //              let imagen = imagenProduct.image,
-            //              let imageData = imagen.jpegData(compressionQuality: 0.5) else {
-            //            mostrarAlerta(titulo: "Error", mensaje: "Por favor complete todos los campos y seleccione una imagen.", accion: "Aceptar")
-            //            return
-            //        }
-            //
-            //        // Generar un nombre único para la imagen
-            //        let imageID = UUID().uuidString
-            //        // Crear una referencia al almacenamiento de Firebase Storage
-            //        let storageRef = Storage.storage().reference().child("imagenes/\(imageID).jpg")
-            //
-            //        // Subir la imagen a Firebase Storage
-            //        let uploadTask = storageRef.putData(imageData, metadata: nil) { (metadata, error) in
-            //            if let error = error {
-            //                // Error al subir la imagen a Firebase Storage
-            //                self.mostrarAlerta(titulo: "Error", mensaje: "Se produjo un error al subir la imagen. Verifique su conexión a Internet y vuelva a intentarlo.", accion: "Aceptar")
-            //                print("Error al subir la imagen a Firebase Storage: \(error)")
-            //                return
-            //            }
-            //
-            //            // La imagen se subió exitosamente a Firebase Storage
-            //            storageRef.downloadURL { (url, error) in
-            //                if let error = error {
-            //                    // Error al obtener la URL de descarga de la imagen
-            //                    self.mostrarAlerta(titulo: "Error", mensaje: "Se produjo un error al obtener la imagen. Verifique su conexión a Internet y vuelva a intentarlo.", accion: "Aceptar")
-            //                    print("Error al obtener la URL de descarga de la imagen: \(error)")
-            //                    return
-            //                }
-            //
-            //                // URL de descarga de la imagen
-            //                guard let imageUrl = url?.absoluteString else {
-            //                    self.mostrarAlerta(titulo: "Error", mensaje: "No se pudo obtener la URL de descarga de la imagen.", accion: "Aceptar")
-            //                    return
-            //                }
-            //
-            //                // Aquí puedes guardar los datos en la base de datos o realizar cualquier otra acción necesaria
-            //                // Por ejemplo, guardar los datos en Firestore
-            //
-            //                // ...
-            //
-            //                // Finalmente, puedes limpiar los campos después de guardar los datos
-            //                self.limpiarCampos()
-            //            }
-            //        }
-            //
+
         }
         
         /*

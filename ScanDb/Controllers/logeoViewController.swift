@@ -14,11 +14,17 @@ class logeoViewController: UIViewController {
 
     @IBOutlet weak var correotxtfield: UITextField!
     @IBOutlet weak var passwordtxtfield: UITextField!
-    
+    let feedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
+
+    @IBAction func registrobtn(_ sender: Any) {
+        feedbackGenerator.impactOccurred()
+    }
     
     @IBAction func logeobutton(_ sender: Any) {
         Auth.auth().signIn(withEmail: correotxtfield.text! , password: passwordtxtfield.text!) {(user, error) in
             print("Intentando Iniciar Sesion")
+            self.feedbackGenerator.impactOccurred()
+
             if error != nil {
                 print("Error de \(error!.localizedDescription)")
                 
@@ -39,6 +45,8 @@ class logeoViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.feedbackGenerator.prepare()
+
 
     }
 

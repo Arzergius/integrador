@@ -44,6 +44,16 @@ class listaViewController: UIViewController, UITableViewDelegate, UITableViewDat
         dismiss(animated: true, completion: nil)
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let articulo = articulos[indexPath.row]
+        performSegue(withIdentifier: "delistaadetalle", sender: articulo)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "delistaadetalle" {
+            let siguienteVC = segue.destination as! verDetalleViewController
+            siguienteVC.articulo = sender as! Articulo
+        }
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return articulos.count
     }

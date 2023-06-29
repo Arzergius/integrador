@@ -11,4 +11,5 @@ pod 'FirebaseFirestore'
 pod 'Firebase/Auth'
 pod 'FirebaseStorage'
 pod 'FirebaseDatabase'
+pod 'SDWebImage'
 end

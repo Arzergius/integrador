@@ -20,6 +20,8 @@
 		B648EBEA2A3D2B3500141120 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B648EBE92A3D2B3500141120 /* GoogleService-Info.plist */; };
 		B648EBEC2A3D31EF00141120 /* listaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B648EBEB2A3D31EF00141120 /* listaViewController.swift */; };
 		B648EBEE2A3D3B1900141120 /* scannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B648EBED2A3D3B1900141120 /* scannerViewController.swift */; };
+		B6E0C52A2A4D2D2D00C795C0 /* verDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0C5292A4D2D2D00C795C0 /* verDetalleViewController.swift */; };
+		B6E0C52C2A4D2D4800C795C0 /* filtradoDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0C52B2A4D2D4800C795C0 /* filtradoDetalleViewController.swift */; };
 		E9F85DA9B83C9B35CAC291E1 /* Pods_ScanDb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B0F9681FCFEDDDAF2BD12B /* Pods_ScanDb.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		B648EBE92A3D2B3500141120 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B648EBEB2A3D31EF00141120 /* listaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listaViewController.swift; sourceTree = "<group>"; };
 		B648EBED2A3D3B1900141120 /* scannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scannerViewController.swift; sourceTree = "<group>"; };
+		B6E0C5292A4D2D2D00C795C0 /* verDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verDetalleViewController.swift; sourceTree = "<group>"; };
+		B6E0C52B2A4D2D4800C795C0 /* filtradoDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filtradoDetalleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				B648EBE52A3D0B6900141120 /* logeoViewController.swift */,
+				B6E0C5292A4D2D2D00C795C0 /* verDetalleViewController.swift */,
+				B6E0C52B2A4D2D4800C795C0 /* filtradoDetalleViewController.swift */,
 				B648EBED2A3D3B1900141120 /* scannerViewController.swift */,
 				B6375B662A4170080003DF85 /* registroArticuloViewController.swift */,
 				B648EBE72A3D0B8700141120 /* registroViewController.swift */,
@@ -252,6 +258,8 @@
 				B648EBEE2A3D3B1900141120 /* scannerViewController.swift in Sources */,
 				B6375B672A4170080003DF85 /* registroArticuloViewController.swift in Sources */,
 				B612F6072A3B811B00E07AA7 /* AppDelegate.swift in Sources */,
+				B6E0C52C2A4D2D4800C795C0 /* filtradoDetalleViewController.swift in Sources */,
+				B6E0C52A2A4D2D2D00C795C0 /* verDetalleViewController.swift in Sources */,
 				B612F6092A3B811B00E07AA7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
