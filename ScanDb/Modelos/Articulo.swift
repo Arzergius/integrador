@@ -14,5 +14,6 @@ class Articulo{
     var precio = ""
     var imagenURL = ""
     var imagenID = ""
+    var id = ""
     //posiblemente se agregue una imagen pendiente
 }

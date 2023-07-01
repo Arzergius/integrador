@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -14,17 +15,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="logeoViewController" customModule="ScanDb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j41-Yp-pqS">
-                                <rect key="frame" x="149" y="352" width="77.333333333333314" height="26.333333333333314"/>
+                                <rect key="frame" x="149" y="305" width="77.333333333333314" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2Y-Dv-DND">
-                                <rect key="frame" x="87.666666666666686" y="388.33333333333331" width="200" height="34"/>
+                                <rect key="frame" x="87.666666666666686" y="341.33333333333331" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="ryO-0x-Vte"/>
                                 </constraints>
@@ -32,18 +33,18 @@
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zEH-rK-AZq">
-                                <rect key="frame" x="88.666666666666686" y="478.66666666666669" width="200" height="34.000000000000057"/>
+                                <rect key="frame" x="88.666666666666686" y="431.66666666666669" width="200" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7N-81-WcJ">
-                                <rect key="frame" x="139" y="442.33333333333331" width="97.333333333333314" height="26.333333333333314"/>
+                                <rect key="frame" x="139" y="395.33333333333331" width="97.333333333333314" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuY-Rd-s7r">
-                                <rect key="frame" x="112.66666666666669" y="537.66666666666663" width="150" height="35"/>
+                                <rect key="frame" x="112.66666666666669" y="490.66666666666669" width="150" height="35.000000000000057"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="GBb-0S-Z0I"/>
@@ -57,14 +58,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chemslar" translatesAutoresizingMaskIntoConstraints="NO" id="Orh-lG-CAt">
-                                <rect key="frame" x="87.666666666666686" y="87" width="200" height="250"/>
+                                <rect key="frame" x="87.666666666666686" y="40" width="200" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="QaC-HJ-HsQ"/>
                                     <constraint firstAttribute="width" constant="200" id="YYO-xO-UBL"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cs9-3i-8RS">
-                                <rect key="frame" x="112.66666666666669" y="592.66666666666663" width="150" height="35"/>
+                                <rect key="frame" x="112.66666666666669" y="545.66666666666663" width="150" height="35"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Registrarse">
@@ -113,7 +114,7 @@
             <objects>
                 <viewController id="vEK-2E-SSr" customClass="registroViewController" customModule="ScanDb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zt6-GT-NnQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9R3-qK-1Ze">
@@ -208,7 +209,7 @@
             <objects>
                 <viewController id="AbC-7r-ecp" customClass="verDetalleViewController" customModule="ScanDb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ueu-at-2Ok">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Codigo de Barras :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCi-zx-fw0">
@@ -276,7 +277,7 @@
             <objects>
                 <viewController id="dAO-D0-sEZ" customClass="filtradoDetalleViewController" customModule="ScanDb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zeG-YK-7t2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Codigo de Barras :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLb-ic-ZwT">
@@ -345,11 +346,11 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="sy9-6U-3CB" customClass="listaViewController" customModule="ScanDb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z4D-Sh-0fk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="00d-1a-5mJ">
-                                <rect key="frame" x="0.0" y="56" width="375" height="699"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="746"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="36D-Ns-Dti" detailTextLabel="o06-ZO-Wba" style="IBUITableViewCellStyleSubtitle" id="DJ8-Sq-fNM">
@@ -389,7 +390,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cfl-GA-3yP">
-                        <barButtonItem key="leftBarButtonItem" title="Cerrar Sesion" id="8pW-HF-qnE">
+                        <barButtonItem key="leftBarButtonItem" title="Opciones" id="8pW-HF-qnE">
                             <connections>
                                 <action selector="cerrarSess:" destination="sy9-6U-3CB" id="on0-gC-Ofd"/>
                             </connections>
@@ -414,7 +415,7 @@
             <objects>
                 <viewController id="HSc-6M-7Pa" customClass="registroArticuloViewController" customModule="ScanDb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aou-4B-6xB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3B9-xJ-Af1">
@@ -529,19 +530,19 @@
         <scene sceneID="9NJ-5s-NHc">
             <objects>
                 <viewController id="Wcz-MV-MBc" customClass="scannerViewController" customModule="ScanDb" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="hJi-4l-tdy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                    <view key="view" contentMode="scaleToFill" id="hJi-4l-tdy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mBV-B2-Dw8">
-                                <rect key="frame" x="87.666666666666686" y="381.66666666666663" width="200" height="38.666666666666686"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mBV-B2-Dw8">
+                                <rect key="frame" x="87.666666666666686" y="381.66666666666669" width="200" height="38.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="oYC-Xi-hQh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ultimo Codigo Registrado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgj-gw-y2P">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ultimo Codigo Registrado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgj-gw-y2P">
                                 <rect key="frame" x="36" y="502.33333333333326" width="303" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Y65-EX-i0d"/>

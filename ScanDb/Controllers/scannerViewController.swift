@@ -1,11 +1,14 @@
 import UIKit
 import AVFoundation
 import Firebase
+import AVFoundation
+
 
 class scannerViewController: UIViewController {
 
     @IBOutlet weak var barnumbertextfield: UITextField!
-    
+
+    var audioPlayer: AVAudioPlayer?
     @IBAction func registrobtn(_ sender: Any) {
         captureSession.stopRunning() // Detener la captura de video
         performSegue(withIdentifier: "iralregistroSegue", sender: nil)
@@ -64,6 +67,19 @@ class scannerViewController: UIViewController {
             captureSession.stopRunning()
         }
     override func viewDidLoad() {
+        
+        if let soundURL = Bundle.main.url(forResource: "Beep", withExtension: "mp3") {
+                do {
+                    // Inicializar el reproductor de audio
+                    audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+                    audioPlayer?.prepareToPlay()
+                } catch {
+                    print("Error al cargar el archivo de sonido: \(error.localizedDescription)")
+                }
+            }
+        
+        
+        
         super.viewDidLoad()
         // Calcular el tamaño y la posición de la capa de vista previa
         let screenWidth = view.bounds.width
@@ -84,30 +100,53 @@ class scannerViewController: UIViewController {
     }
     // A VER SI EXISTE
     func codigoExisteEnBaseDeDatos(barcode: String, completionHandler: @escaping (Bool) -> Void) {
-        let usersRef = Database.database().reference().child("usuarios")
-
-        usersRef.observeSingleEvent(of: .value) { snapshot in
-            for case let userSnapshot as DataSnapshot in snapshot.children {
-                guard let snapsDict = userSnapshot.childSnapshot(forPath: "snaps").value as? [String: Any] else {
-                    continue
-                }
-
-                for snapDict in snapsDict.values {
-                    guard let snap = snapDict as? [String: Any],
-                          let snapBarcode = snap["barcode"] as? String else {
-                        continue
-                    }
-
-                    if snapBarcode == barcode {
-                        completionHandler(true)
-                        return
-                    }
+        guard let currentUserID = Auth.auth().currentUser?.uid else {
+            completionHandler(false)
+            return
+        }
+        
+        let snapsRef = Database.database().reference().child("usuarios").child(currentUserID).child("snaps")
+        
+        snapsRef.observeSingleEvent(of: .value) { snapshot in
+            for snap in snapshot.children {
+                if let snapData = snap as? DataSnapshot,
+                   let snapDict = snapData.value as? [String: Any],
+                   let snapBarcode = snapDict["barcode"] as? String,
+                   snapBarcode == barcode {
+                    completionHandler(true)
+                    return
                 }
             }
-
+            
             completionHandler(false)
         }
     }
+
+//    func codigoExisteEnBaseDeDatos(barcode: String, completionHandler: @escaping (Bool) -> Void) {
+//        let usersRef = Database.database().reference().child("usuarios")
+//
+//        usersRef.observeSingleEvent(of: .value) { snapshot in
+//            for case let userSnapshot as DataSnapshot in snapshot.children {
+//                guard let snapsDict = userSnapshot.childSnapshot(forPath: "snaps").value as? [String: Any] else {
+//                    continue
+//                }
+//
+//                for snapDict in snapsDict.values {
+//                    guard let snap = snapDict as? [String: Any],
+//                          let snapBarcode = snap["barcode"] as? String else {
+//                        continue
+//                    }
+//
+//                    if snapBarcode == barcode {
+//                        completionHandler(true)
+//                        return
+//                    }
+//                }
+//            }
+//
+//            completionHandler(false)
+//        }
+//    }
 
 //FIN DEL A VER SI EXISTE
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
@@ -130,10 +169,12 @@ extension scannerViewController: AVCaptureMetadataOutputObjectsDelegate {
         for metadataObject in metadataObjects {
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject,
                   let codeValue = readableObject.stringValue else { continue }
-            
+
             barnumbertextfield.text = codeValue // Mostrar el valor del código escaneado en el campo de texto
             self.captureSession.stopRunning()
-            
+            //BEEP
+            audioPlayer?.play()
+
             codigoExisteEnBaseDeDatos(barcode: codeValue) { (codigoExiste) in
                 if codigoExiste {
                     self.performSegue(withIdentifier: "filtradosegue", sender: nil)
@@ -148,5 +189,6 @@ extension scannerViewController: AVCaptureMetadataOutputObjectsDelegate {
             }}
 
             }
+    
         }
 
