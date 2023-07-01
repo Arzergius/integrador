@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
+import FirebaseStorage
 
 class listaViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var scannedCode: String?
@@ -37,6 +38,8 @@ class listaViewController: UIViewController, UITableViewDelegate, UITableViewDat
             articulo.cantidad = (snapshot.value as! NSDictionary)["cantidad"] as! String
             articulo.precio = (snapshot.value as! NSDictionary)["precio"] as! String
             articulo.imagenURL = (snapshot.value as! NSDictionary)["imagenURL"] as! String
+            articulo.imagenID = (snapshot.value as! NSDictionary)["imagenID"] as! String
+            articulo.id = snapshot.key
             self.articulos.append(articulo)
             self.tablaProductos.reloadData()
         })
@@ -71,14 +74,15 @@ class listaViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let articulo = articulos[indexPath.row]
+            let articulo:Articulo = articulos[indexPath.row]
             
             // Eliminar el artículo de la lista
             articulos.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             
-            // Falta que elimine de la base de datos mas
-            
+            // Eliminar articulo de DB y Storage
+            Database.database().reference().child("usuarios").child((Auth.auth().currentUser?.uid)!).child("snaps").child(articulo.id).removeValue()
+            Storage.storage().reference().child("imagenes").child("\(articulo.imagenID).jpg").delete{ (error) in print("Se eliminó la imagen correctamente")}
         }}
 
 //SOBRECARGA DE LA VISTA SOLO PARA BOTONES
