@@ -18,10 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image=" " translatesAutoresizingMaskIntoConstraints="NO" id="vXx-S2-rGM">
+                                <rect key="frame" x="0.0" y="-10" width="375" height="836"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j41-Yp-pqS">
                                 <rect key="frame" x="149" y="305" width="77.333333333333314" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.94955584469999998" blue="0.97262603380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2Y-Dv-DND">
@@ -40,12 +43,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7N-81-WcJ">
                                 <rect key="frame" x="139" y="395.33333333333331" width="97.333333333333314" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.86078912019999998" green="0.83448414069999999" blue="0.80137782940000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuY-Rd-s7r">
                                 <rect key="frame" x="112.66666666666669" y="490.66666666666669" width="150" height="35.000000000000057"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" red="0.94328010082244873" green="0.69101516088836279" blue="0.3798794540523836" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="GBb-0S-Z0I"/>
                                 </constraints>
@@ -66,7 +69,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cs9-3i-8RS">
                                 <rect key="frame" x="112.66666666666669" y="545.66666666666663" width="150" height="35"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" red="0.94328010080000002" green="0.76152927159999995" blue="0.37966843770000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Registrarse">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -80,9 +83,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.86078912019729614" green="0.83448414067855881" blue="0.80137782942916669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vXx-S2-rGM" secondAttribute="trailing" id="3UK-fV-oSd"/>
                             <constraint firstItem="zEH-rK-AZq" firstAttribute="top" secondItem="b7N-81-WcJ" secondAttribute="bottom" constant="10" id="4UT-zF-Gpl"/>
                             <constraint firstItem="j41-Yp-pqS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5TE-EF-eiC"/>
                             <constraint firstItem="b7N-81-WcJ" firstAttribute="top" secondItem="f2Y-Dv-DND" secondAttribute="bottom" constant="20" id="AUN-Oq-6Tb"/>
+                            <constraint firstItem="vXx-S2-rGM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-10" id="BVU-JG-Tjm"/>
                             <constraint firstItem="zEH-rK-AZq" firstAttribute="width" secondItem="f2Y-Dv-DND" secondAttribute="width" id="G9X-y0-Tr5"/>
                             <constraint firstItem="f2Y-Dv-DND" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Oac-Lb-KJF"/>
                             <constraint firstItem="Orh-lG-CAt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="To5-fN-QVm"/>
@@ -92,10 +97,12 @@
                             <constraint firstItem="Cs9-3i-8RS" firstAttribute="width" secondItem="yuY-Rd-s7r" secondAttribute="width" id="jNV-t1-XGb"/>
                             <constraint firstItem="yuY-Rd-s7r" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lKU-8w-ZnN"/>
                             <constraint firstItem="zEH-rK-AZq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="1" id="r2P-sH-0DA"/>
+                            <constraint firstAttribute="bottom" secondItem="vXx-S2-rGM" secondAttribute="bottom" constant="-24" id="saS-uO-5cV"/>
                             <constraint firstItem="j41-Yp-pqS" firstAttribute="top" secondItem="Orh-lG-CAt" secondAttribute="bottom" constant="15" id="sdv-TH-FCv"/>
                             <constraint firstItem="Cs9-3i-8RS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="u65-6g-Uqx"/>
                             <constraint firstItem="b7N-81-WcJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yHN-or-NOk"/>
                             <constraint firstItem="Orh-lG-CAt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="yNI-3p-u2j"/>
+                            <constraint firstItem="vXx-S2-rGM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z1s-bc-0S5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wbc-wV-tuG"/>
@@ -582,6 +589,7 @@
         <segue reference="63c-hU-bek"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name=" " width="736" height="1308"/>
         <image name="Chemslar" width="384" height="512"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
