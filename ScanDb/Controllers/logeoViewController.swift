@@ -14,6 +14,12 @@ class logeoViewController: UIViewController {
 
     @IBOutlet weak var correotxtfield: UITextField!
     @IBOutlet weak var passwordtxtfield: UITextField!
+    
+    @IBOutlet weak var iniciarSesionbtn: UIButton!
+    
+    @IBOutlet weak var registrobutn: UIButton!
+    
+    
     let feedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
 
     @IBAction func registrobtn(_ sender: Any) {
@@ -46,6 +52,14 @@ class logeoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.feedbackGenerator.prepare()
+        
+        iniciarSesionbtn.layer.cornerRadius = iniciarSesionbtn.frame.height / 2 // Redondear completamente el botón
+            // Opcionalmente, puedes establecer el atributo clipsToBounds en true para asegurarte de que el contenido del botón no se desborde
+        iniciarSesionbtn.clipsToBounds = true
+        
+        registrobutn.layer.cornerRadius = registrobutn.frame.height / 2 // Redondear completamente el botón
+            // Opcionalmente, puedes establecer el atributo clipsToBounds en true para asegurarte de que el contenido del botón no se desborde
+        registrobutn.clipsToBounds = true
 
 
     }

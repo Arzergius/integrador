@@ -15,10 +15,14 @@ class registroArticuloViewController: UIViewController, UIImagePickerControllerD
     var imagePicker = UIImagePickerController()
     var scannedCode: String?
     
+    @IBOutlet weak var myButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate =  self
+        myButton.layer.cornerRadius = myButton.frame.height / 2 // Redondear completamente el botón
+            // Opcionalmente, puedes establecer el atributo clipsToBounds en true para asegurarte de que el contenido del botón no se desborde
+            myButton.clipsToBounds = true
         
         if let code = scannedCode {
             txtfieldbarcode.text = code
