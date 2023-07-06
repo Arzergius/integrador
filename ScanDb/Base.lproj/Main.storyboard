@@ -688,6 +688,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="lUk-bs-nWo"/>
         <segue reference="cKZ-Ff-JB2"/>
     </inferredMetricsTieBreakers>
     <resources>
