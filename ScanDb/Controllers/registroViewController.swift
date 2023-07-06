@@ -24,6 +24,13 @@ class registroViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        
+        correotxtlbl.resignFirstResponder()
+        passwordtxtlbl.resignFirstResponder()
+    }
+    
     @IBAction func btnregistro(_ sender: Any) {
         guard let usuario = correotxtlbl.text, !usuario.isEmpty,
               let password =  passwordtxtlbl.text, !password.isEmpty else{
